@@ -7,6 +7,7 @@ import Header from "@/components/common/Header";
 import Nav from "@/components/common/Nav";
 import Section from "@/components/common/Section";
 import RealTimeSearches from "@/components/common/RealTimeSearches";
+import Footer from "@/components/common/Footer"
 
 const Home = () => {
     const MainSection = styled.div`

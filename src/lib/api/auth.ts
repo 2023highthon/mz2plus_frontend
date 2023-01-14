@@ -8,9 +8,9 @@ export const register = ({
     id,
     password,
     name,
-    birth,
+    date,
     profile_img,
 }: RegisterParams) =>
-    client.post("/users/register", { id, password, name, birth, profile_img });
+    client.post("/users/register", { id, password, name, date, profile_img });
 
 export const logout = () => client.delete("/api/auth/logout");
