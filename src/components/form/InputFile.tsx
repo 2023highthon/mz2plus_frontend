@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const InputFile = (props: any) => {
     const resize_image = (image: any) => {
         let canvas = document.createElement("canvas"),
-            max_size = 1280,
+            max_size = 500,
             width = image.width,
             height = image.height;
 
