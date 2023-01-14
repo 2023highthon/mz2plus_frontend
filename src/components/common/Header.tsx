@@ -59,6 +59,34 @@ const Header = () => {
         align-items: center;
         gap: 108px;
     `;
+
+    const Search = styled.div`
+        display: flex;
+        align-items: center;
+        background-color: #f5f5f7;
+        width: 380px;
+        height: 34px;
+        border-radius: 24px;
+        padding: 0 12px;
+        gap: 1px;
+    `
+
+    const SearchInput = styled.input`
+        width: 100%;
+        height: 100%;
+        background: #f5f5f5;
+        color: #b6b6b6;
+        border: none;
+        outline: none;
+        font-size: 12px;
+    `
+    
+    const SearchAndActions = styled.div`
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    `
+
     return (
         <Container>
             <Wrapper>
@@ -71,11 +99,18 @@ const Header = () => {
                         <Shortcut href={"board/1"}>일반</Shortcut>
                     </LinkGroup>
                 </LogoAndLinkGroup>
+                <SearchAndActions>
+                    <Search>
+                        <Image src="/SearchIcon.svg" alt="search_icon" width={24} height={24} />
+                        <SearchInput placeholder="게시물 검색하기">
 
-                <Actions>
-                    <Shortcut href={"login"}>로그인</Shortcut>
-                    <SignupButton href={"/register"}>회원가입</SignupButton>
-                </Actions>
+                        </SearchInput>
+                    </Search>
+                    <Actions>
+                        <Shortcut href={"login"}>로그인</Shortcut>
+                        <SignupButton href={"/register"}>회원가입</SignupButton>
+                    </Actions>
+                </SearchAndActions>
             </Wrapper>
         </Container>
     );
