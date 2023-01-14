@@ -39,7 +39,7 @@ const Header = () => {
         font-size: 15px;
         color: var(--gray700);
         &:hover {
-            color: var(--gray500);
+            color: #8877FF;
         }
     `;
 
@@ -75,7 +75,6 @@ const Header = () => {
         width: 100%;
         height: 100%;
         background: #f5f5f5;
-        color: #b6b6b6;
         border: none;
         outline: none;
         font-size: 12px;
@@ -94,14 +93,13 @@ const Header = () => {
                     <Image src="/logo.svg" alt="logo" width={46} height={20} />
                     <LinkGroup>
                         <Shortcut href={"board/1"}>일반</Shortcut>
-                        <Shortcut href={"board/1"}>일반</Shortcut>
-                        <Shortcut href={"board/1"}>일반</Shortcut>
-                        <Shortcut href={"board/1"}>일반</Shortcut>
+                        <Shortcut href={"board/1"}>상담</Shortcut>
+                        <Shortcut href={"board/1"}>MZ++</Shortcut>
                     </LinkGroup>
                 </LogoAndLinkGroup>
                 <SearchAndActions>
                     <Search>
-                        <Image src="/SearchIcon.svg" alt="search_icon" width={24} height={24} />
+                        <Image src="/search.svg" alt="search_icon" width={24} height={24} />
                         <SearchInput placeholder="게시물 검색하기">
 
                         </SearchInput>
