@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { useRecoilState } from "recoil";
 import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const Home = () => {
     return (
